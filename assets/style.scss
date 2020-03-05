@@ -39,7 +39,8 @@
 }
 
 .buttons{
-    @include flex(row, space-around, flex-start)
+    @include flex(row, space-around, flex-start);
+    flex-wrap: wrap;
 }
 
 button {
@@ -54,8 +55,46 @@ button {
 }
 
 
+#bio {
+    border: solid 2px red;
+    color: red;
+}
 
+#about {
+    border: solid 2px orange;
+    color: orange;
+    
+}
 
+#skills {
+    border: solid 2px green;
+    color: green;
+    
+}
+
+#projects {
+    border: solid 2px blue;
+    color: blue;
+    
+}
+
+#contact {
+    border: solid 2px purple;
+    color: purple;
+
+}
+
+.pop-up {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 3em;
+    flex-grow: 1;
+    flex-basis: 50vw;
+    max-width: 62.5vw;
+    border: double yellow .3em;
+    padding: .25em;
+    text-decoration: double;
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
@@ -65,7 +104,7 @@ button {
     }
 
     .buttons {
-        @include flex(column, space-around, center)
+        @include flex(column, space-around, center);
 
     }
 }

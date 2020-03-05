@@ -9,8 +9,9 @@
 <body>
     
     <span class="icon toggle">
-        <i style="color: black;" class="far fa-lightbulb"></i>
+        <i style="color: black;" data-active="false" class="far fa-lightbulb"></i>
     </span>
+
     <div class="icons">
         <span class="icon">
             <a href="https://github.com/tarthurf" style="color: black;"><i class="fab fa-github"></i></a>
@@ -27,18 +28,16 @@
     </div>
 
     <div class="buttons">
-        <button>Bio</button>
-        <button>About Me</button>
-        <button>Skills</button>
-        <button>Projects</button>
-        <button>Contact</button>
-    </div>
-
-    <div class="temp">
-
+        <button class="active" id="bio">Bio</button>
+        <button id="about">About Me</button>
+        <button id="skills">Skills</button>
+        <button id="projects">Projects</button>
+        <button id="contact">Contact</button>
+        <div class="pop-up"></div>
     </div>
 
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
