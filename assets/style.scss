@@ -1,0 +1,71 @@
+
+@mixin flex($dir, $just, $align) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $align
+}
+
+.toggle {
+    @include flex(row, flex-end, center);
+    position: fixed;
+    height: -1%;
+    right: 1%
+}
+
+.icon {
+    font-size: 2em;
+    padding: .5em;
+}
+
+.icons {
+    @include flex(row, flex-start, center);
+    position: fixed;
+    height: -1%;
+
+}
+
+.header {
+    @include flex(column, flex-start, center);
+    padding-top: 5vh;
+    img {
+        width: 30vh;
+        border-radius: 50%;
+        border: double yellow .3em;
+        padding: .25em;
+        text-decoration: double;
+    
+    }
+}
+
+.buttons{
+    @include flex(row, space-around, flex-start)
+}
+
+button {
+    background-color: transparent;
+    outline: none;
+    height: 3em;
+    width: 12em;
+    border: solid 2px black;
+    border-radius: 8px;
+    margin: .5em
+    
+}
+
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .icons {
+        @include flex(column, flex-start, flex-start);
+        position: fixed;
+    }
+
+    .buttons {
+        @include flex(column, space-around, center)
+
+    }
+}
