@@ -61,7 +61,7 @@ $('button').click(function() {
     // popUpEl.text('')
     hideEl(popUpEl, 'fast');
     setTimeout(() => {
-        buttonsEl.children().removeClass('active');
+        buttonsEl.find('button').removeClass('active');
         $(this).addClass('active');
         popUpShow();
     }, 500);
