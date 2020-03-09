@@ -1,3 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 1075px;
+}
+
 .toggle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,11 +84,12 @@
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 3em;
 }
 
 button {
@@ -119,6 +128,7 @@ button {
 }
 
 .pop-up {
+  margin: auto;
   text-align: center;
   font-size: 16px;
   margin-top: 3em;
@@ -132,6 +142,41 @@ button {
   padding: .25em;
   -webkit-text-decoration: double;
           text-decoration: double;
+  border-radius: 8px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form #submit {
+  min-width: 9em;
+  height: 3em;
+  border: solid 2px black;
+  border-radius: 8px;
+  margin: .5em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+input {
+  min-width: 50vw;
+  height: 3em;
+  border: solid 2px black;
+  border-radius: 8px;
+  margin: .5em;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -151,6 +196,9 @@ button {
         -ms-flex-align: start;
             align-items: flex-start;
     position: fixed;
+  }
+  icon {
+    font-size: 1.5em;
   }
   .buttons {
     display: -webkit-box;

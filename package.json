@@ -1,0 +1,22 @@
+{
+  "name": "mnl-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarthurf/MNL-Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tarthurf/MNL-Portfolio/issues"
+  },
+  "homepage": "https://github.com/tarthurf/MNL-Portfolio#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}

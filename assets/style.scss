@@ -6,6 +6,14 @@
     align-items: $align
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 1075px;
+}
+
 .toggle {
     @include flex(row, flex-end, center);
     position: fixed;
@@ -39,8 +47,9 @@
 }
 
 .buttons{
-    @include flex(row, space-around, flex-start);
+    @include flex(row, space-around, center);
     flex-wrap: wrap;
+    margin-bottom: 3em;
 }
 
 button {
@@ -51,7 +60,6 @@ button {
     border: solid 2px black;
     border-radius: 8px;
     margin: .5em
-    
 }
 
 
@@ -85,6 +93,7 @@ button {
 }
 
 .pop-up {
+    margin: auto;
     text-align: center;
     font-size: 16px;
     margin-top: 3em;
@@ -94,6 +103,31 @@ button {
     border: double yellow .3em;
     padding: .25em;
     text-decoration: double;
+    border-radius: 8px;
+}
+
+form {
+    @include flex(column, space-around, center);
+    #submit {
+        min-width: 9em;
+        // outline: none;
+        height: 3em;
+        border: solid 2px black;
+        border-radius: 8px;
+        margin: .5em;
+        align-self: center;
+    
+    }
+}
+
+input {
+    min-width: 50vw;
+    // outline: none;
+    height: 3em;
+    border: solid 2px black;
+    border-radius: 8px;
+    margin: .5em
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -101,6 +135,10 @@ button {
     .icons {
         @include flex(column, flex-start, flex-start);
         position: fixed;
+    }
+    icon {
+        font-size: 1.5em;
+        // padding: .25em;
     }
 
     .buttons {
