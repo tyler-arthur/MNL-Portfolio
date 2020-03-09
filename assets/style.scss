@@ -6,12 +6,15 @@
     align-items: $align
 }
 
+$font: 'B612 Mono', monospace;
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     height: 1075px;
+    font-family: $font;
 }
 
 .toggle {
@@ -42,7 +45,10 @@ body {
         border: double yellow .3em;
         padding: .25em;
         text-decoration: double;
-    
+    }
+    h2 {
+            max-width: 79vw;
+            text-align: center;
     }
 }
 
@@ -53,6 +59,7 @@ body {
 }
 
 button {
+    font-family: $font;
     background-color: transparent;
     outline: none;
     height: 3em;
@@ -60,6 +67,7 @@ button {
     border: solid 2px black;
     border-radius: 8px;
     margin: .5em
+    
 }
 
 
@@ -116,7 +124,12 @@ form {
         border-radius: 8px;
         margin: .5em;
         align-self: center;
+        background-color: transparent;
+    }
     
+    #submit:hover {
+        border: solid 2px transparent;
+        border-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Rainbow-gradient-fully-saturated.svg/768px-Rainbow-gradient-fully-saturated.svg.png);
     }
 }
 
@@ -126,9 +139,11 @@ input {
     height: 3em;
     border: solid 2px black;
     border-radius: 8px;
-    margin: .5em
+    margin: .5em;
+    padding: .5em;
 
 }
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
@@ -141,8 +156,14 @@ input {
         // padding: .25em;
     }
 
+    .header{
+        h1 {
+            max-width: 70vw;
+            text-align: center;
+        }
+    }
+
     .buttons {
         @include flex(column, space-around, center);
-
     }
 }

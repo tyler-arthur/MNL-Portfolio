@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tyler Arthur: Web Developer</title>
+    <link href="https://fonts.googleapis.com/css?family=B612+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     
+    <!-- Darkmode toggler -->
     <span class="icon toggle">
         <i style="color: black;" data-active="false" class="far fa-lightbulb"></i>
     </span>
 
+    <!-- links to github and linkedin -->
     <div class="icons">
         <span class="icon">
             <a href="https://github.com/tarthurf" style="color: black;"><i class="fab fa-github"></i></a>
@@ -21,12 +24,14 @@
         </span>
     </div>   
     
+    <!-- A beautifully simple header -->
     <div class="header">
-        <h1>hi, i'm tyler.</h1>
+        <h1><strong>hi, i'm tyler.</strong></h1>
         <img src="/assets/images/box headshot.jpg" alt="swedish">
         <h2>i create apps for the web.</h2>
     </div>
     
+    <!-- Buttons to bring up certain info -->
     <div class="buttons">
         <a href="#bottom"><button class="active" id="bio">Bio</button></a>
         <a href="#bottom"><button id="about">About Me</button></a>
@@ -34,8 +39,12 @@
         <a href="#bottom"><button id="projects">Projects</button></a>
         <a href="#bottom"><button id="contact">Contact</button></a>
     </div>
+    <!-- This is where the popup information will be displayed -->
     <div class="pop-up"></div>
+
+    <!-- This anchor scrolls the window tot he bottom of the page on a button click -->
     <a id="bottom" href="#"></a>
+    <!-- Linking scripts -->
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>

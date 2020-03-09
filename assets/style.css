@@ -4,6 +4,7 @@ html {
 
 body {
   height: 1075px;
+  font-family: "B612 Mono", monospace;
 }
 
 .toggle {
@@ -74,6 +75,11 @@ body {
           text-decoration: double;
 }
 
+.header h2 {
+  max-width: 79vw;
+  text-align: center;
+}
+
 .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,6 +99,7 @@ body {
 }
 
 button {
+  font-family: "B612 Mono", monospace;
   background-color: transparent;
   outline: none;
   height: 3em;
@@ -169,6 +176,13 @@ form #submit {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  background-color: transparent;
+}
+
+form #submit:hover {
+  border: solid 2px transparent;
+  -o-border-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Rainbow-gradient-fully-saturated.svg/768px-Rainbow-gradient-fully-saturated.svg.png);
+     border-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Rainbow-gradient-fully-saturated.svg/768px-Rainbow-gradient-fully-saturated.svg.png);
 }
 
 input {
@@ -177,6 +191,7 @@ input {
   border: solid 2px black;
   border-radius: 8px;
   margin: .5em;
+  padding: .5em;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -199,6 +214,10 @@ input {
   }
   icon {
     font-size: 1.5em;
+  }
+  .header h1 {
+    max-width: 70vw;
+    text-align: center;
   }
   .buttons {
     display: -webkit-box;
