@@ -3,7 +3,7 @@ const information = {
     bio: "Though commonly called \"Tyler\", I am also know me as swedish, my online perona. I reside in San Diego, CA and am currently a full stack web development student due to graduate in June of 2020.",
     about: "This is my about me",
     skills: "I am fluent in HTML, CSS, SCSS, JavaScript (ES6), jQuery, multiple CSS frameworks, and Node.js.",
-    projects: `<a href=""><span>Password Generator</span></a> / <a href=""><span>Day Planner</span></a> / <a href=""><span>Weather Dashboard</span></a> / <a href=""><span>MunchiMaps</span></a> / <a href=""><span>Team Builder</span></a> `,
+    projects: `<a href=""><i class="fas fa-key"></i><span> Password Generator</span></a> / <a href=""><i class="fas fa-calendar-check"></i><span> Day Planner</span></a> / <a href=""><i class="fas fa-cloud"></i><span> Weather Dashboard</span></a> / <a href=""><i class="fas fa-map-marked-alt"></i><span>MunchiMaps</span></a> / <a href=""><i class="fas fa-users-cog"></i><span> Team Builder</span></a> `,
     contact: 
     `<form action="https://formspree.io/xknravez" method="POST">
         <p>Message</p>
