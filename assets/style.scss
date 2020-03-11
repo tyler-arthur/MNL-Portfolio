@@ -109,7 +109,7 @@ button {
     flex-basis: 50vw;
     max-width: 62.5vw;
     border: double yellow .3em;
-    padding: .25em;
+    padding: 1em;
     text-decoration: double;
     border-radius: 8px;
 }
@@ -120,7 +120,7 @@ form {
         min-width: 9em;
         // outline: none;
         height: 3em;
-        border: solid 2px black;
+        border: solid 2px rgb(57, 54, 54);
         border-radius: 8px;
         margin: .5em;
         align-self: center;
