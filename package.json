@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/tarthurf/MNL-Portfolio#readme",
   "dependencies": {
-    "browser-sync": "^2.26.7"
+    "browser-sync": "^2.27.10"
   }
 }
